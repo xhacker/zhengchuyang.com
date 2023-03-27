@@ -5,9 +5,18 @@
     <title>Zheng Chuyang</title>
     <meta name="generator" content="Zheng Chuyang">
     <meta name="keywords" content="Chuyang, Zheng Chuyang, typeface, type, typography, chinese font, chinese type design, 字体设计">
+    <link rel="stylesheet" href="css/no.css" id="theme-style">
 </head>
 
 <body>
+
+<p>I didn't provide a default CSS for this website, but you can choose the CSS designed by my friends.</p>
+
+<select id="theme-selector">
+    <option value="css/no.css">No CSS</option>
+    <option value="css/tengis.css">Tengis</option>
+</select>
+
 <h1>Zheng Chuyang</h1>
 <ul id="character_variants">
 <li id="zh-cn">郑初阳</li>
@@ -66,6 +75,13 @@ while(x=eval(x));}hiveware_enkoder();
 </ul>
 
 <div id="footer">@zhengchuyang.com 2023</div>
+
+  <script>
+    document.getElementById('theme-selector').addEventListener('change', function() {
+      let themeStyle = document.getElementById('theme-style');
+      themeStyle.href = this.value;
+    });
+  </script>
 
 </body>
 

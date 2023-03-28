@@ -1,0 +1,31 @@
+* {
+}
+
+body {
+font-family: "Times New Roman", serif;
+background: yellow;
+}
+
+h1 {
+font-family: black;
+font-size: 56px;
+}
+
+h2 {
+font-family: black;
+font-size: 56px;
+margin-bottom: 0;
+}
+
+p {
+font-family: bold;
+line-height: 22px;
+}
+
+ul {
+font-family: bold;
+}
+
+li {
+list-style-type: circle;
+}

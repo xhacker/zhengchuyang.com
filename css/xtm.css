@@ -1,8 +1,11 @@
-* {
+@font-face {
+    font-family: "xtm";
+    src: url("../font/xtm-Regular.woff2");
 }
 
+
 body {
-font-family: "Times New Roman", serif;
+font-family: serif;
 background: yellow;
 }
 
@@ -26,6 +29,8 @@ ul {
 font-family: bold;
 }
 
-li {
+ul#character_variants, ul#name_variants {
 list-style-type: circle;
+font-family: "xtm";
+font-size: 2em;
 }

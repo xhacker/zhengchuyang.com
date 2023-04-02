@@ -6,10 +6,16 @@
     <meta name="generator" content="Zheng Chuyang">
     <meta name="keywords" content="Chuyang, Zheng Chuyang, typeface, type, typography, chinese font, chinese type design, 字体设计">
     <link rel="stylesheet" href="css/no.css" id="theme-style">
+    <script>
+    function displayYear() {
+      var currentYear = new Date().getFullYear();
+      var result = currentYear - 2000;
+      document.getElementById("year").innerHTML = result;
+    }
+  </script>
 </head>
 
-<body>
-
+<body onload="displayYear()">
 <p>I didn't provide a default CSS for this website, but you can choose a CSS designed by my friends.</p>
 
 <select id="theme-selector">
@@ -41,7 +47,7 @@
 
 <p>I studied Computer Science and Design in college. Currently, I work in type design, specifically designing Hanzi/Kanji/Hanja fonts for Chinese, Japanese and Korean. I co-founded <a href="http://www.mallikatype.com">Mallikātype</a>, a font company, with some friends. In my personal life, I enjoy learning languages (although I don't have much practical application, I am interested in etymology and writing systems), as well as some interests in literature, history, and philosophy, particularly Kant and Mahāyāna.</p>
 
-<p>In addition, I am a basketball fan of over 20 years. If I ever have the chance to coach an amateur basketball team game, it could also be considered one of my life goals.</p>
+<p>In addition, I am a basketball fan of over <span id="year"></span> years. If I ever have the chance to coach an amateur basketball team game, it could also be considered one of my life goals.</p>
 
 </div>
 

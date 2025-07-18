@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/no.css" id="theme-style">
     <script>
     function displayYear() {
-      var currentYear = new Date().getFullYear();
-      var result = currentYear - 2000;
-      document.getElementById("year").innerHTML = result;
+      var currentYear = new Date().getFullYear();  // 获取当前年份
+      document.getElementById("footer").innerHTML = "@zhengchuyang.com " + currentYear;
     }
   </script>
 </head>
@@ -92,6 +91,5 @@ while(x=eval(x));}hiveware_enkoder();
   </script>
 
 </body>
-
 
 </html>
